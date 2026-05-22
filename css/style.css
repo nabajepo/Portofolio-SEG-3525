@@ -1,0 +1,177 @@
+/* =========================
+   GENERAL
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #222;
+    line-height: 1.7;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1d3557;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-size: 1.3rem;
+}
+
+.nav-link {
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #4dabf7 !important;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(
+        rgba(29, 53, 87, 0.85),
+        rgba(29, 53, 87, 0.85)
+    ),
+    url("../images/background.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    padding-top: 80px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+.hero-section .btn {
+    padding: 12px 28px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.profile-img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 6px solid #1d3557;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card-title {
+    color: #1d3557;
+    font-weight: bold;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+
+.project-card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.project-card .btn {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary {
+    background-color: #457b9d;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #1d3557;
+}
+
+.btn-outline-primary {
+    border-color: #457b9d;
+    color: #457b9d;
+}
+
+.btn-outline-primary:hover {
+    background-color: #457b9d;
+    color: white;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 40px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero-section h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .profile-img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+}
